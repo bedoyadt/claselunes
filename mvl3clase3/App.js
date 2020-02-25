@@ -4,20 +4,18 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.box}>
-        <Text style={styles.text}>Dimelo papi!</Text>
-        </View>
-      <View style={styles.box2}>
-        <Text style={styles.text}>Esto es Developer!</Text>
-        </View>
-      <View style={styles.box3}>
-      <Text style={styles.text}>Esto es Developer junior!</Text>
-      </View>
-      
-      
+        <View style={styles.box1}>
+        <View style={styles.box2}></View>  
+        <View style={styles.box3}></View> 
+          </View>  
+        <View style={styles.box4}>
+        <View style={styles.box5}></View>  
+        <View style={styles.box6}></View> 
+        </View>   
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -28,16 +26,29 @@ const styles = StyleSheet.create({
   text: {
     color: '#fff',
   },
-  box:{
+  box1:{
     flex: 1,
-    backgroundColor: '#F7F709',
+    backgroundColor: '#3EE16F',
+    flexDirection: "row",
   },
   box2:{
     flex: 1,
-    backgroundColor: '#0922F7',
+    backgroundColor: '#454212',
   },
   box3:{
     flex: 1,
-    backgroundColor: '#E80F23',
+    backgroundColor: '#25D33A',
+  },
+  box4:{
+    flex: 1,
+    backgroundColor: '#4568',
+    flexDirection: "row",
+  },box5:{
+    flex: 1,
+    backgroundColor: '#1E719A',
+  },
+  box6:{
+    flex: 1,
+    backgroundColor: '#E1813E',
   }
 });
